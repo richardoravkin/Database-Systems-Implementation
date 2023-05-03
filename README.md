@@ -22,16 +22,15 @@ The second is the estimation of the size of a join, which is called by the keywo
 
 As an example, suppose we want to find all 'triangles' in the file 'test'. We would do this as follows:
 
-An example interaction could be:
 ./a.out
+
 LOAD test test
+
 COUNT test(x,y) test(y,z) test(z,x) 
 
-Alternatively, we could want an approximate answer to the number of tuples where the first integer is 2, and the second is something which also occurs on the first place on a tuple which has a 3 on the second place.
-This would be done as follows:
+Now suppose, we want an approximate answer to the number of tuples where the first integer is 2, and the second is something which also occurs on the first place on a tuple which has a 3 on the second place.
+We now run:
 
-./a.out
-LOAD test test
 ESTIMATE test(2,x) test(x,3) 
 
 Note that the algorithms correctly handle tuples which are repeated - this is accounted for in the multiplicity. 
