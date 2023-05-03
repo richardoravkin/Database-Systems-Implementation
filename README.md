@@ -28,7 +28,7 @@ LOAD test test
 
 COUNT test(x,y) test(y,z) test(z,x) 
 
-Now suppose, we want an approximate answer to the number of tuples where the first integer is 2, and the second is something which also occurs on the first place on a tuple which has a 3 on the second place.
+Now suppose, we want an approximate answer to the number of tuples where the first integer is 2, and the second is something which also occurs on the first place in a tuple which has a 3 on the second place.
 We now run:
 
 ESTIMATE test(2,x) test(x,3) 
