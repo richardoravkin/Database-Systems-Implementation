@@ -37,4 +37,4 @@ Note that the algorithms correctly handle tuples which are repeated - this is ac
 
 In case you want to run this on proper data, make sure to disable printing by modifying the code. Otherwise the performance will be slower. 
 
-The code was tested on a dataset where relations were of size 10-60MB. Files which are much larger than this could potentially significantly slow down the performance. 
+The code was tested on a dataset where relations were of size 10-60MB. Files which are much larger than this could potentially slow down the performance. 
